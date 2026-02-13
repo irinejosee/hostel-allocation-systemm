@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hostel Allocation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Hostel Allocation System</h1>
+
+    <div class="card">
+        <h2>Add Student</h2>
+        <input type="text" id="name" placeholder="Name"><br><br>
+        <input type="email" id="email" placeholder="Email"><br><br>
+        <input type="text" id="phone" placeholder="Phone"><br><br>
+        <input type="text" id="gender" placeholder="Gender"><br><br>
+        <input type="text" id="course" placeholder="Course"><br><br>
+        <input type="number" id="year" placeholder="Year of Study"><br><br>
+        <input type="text" id="guardian" placeholder="Guardian Name"><br><br>
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <div class="card">
+        <h2>Students</h2>
+        <ul id="studentList"></ul>
+    </div>
+
+    <div class="card">
+        <h2>Add Room</h2>
+        <input type="text" id="roomNumber" placeholder="Room Number"><br><br>
+        <input type="text" id="block" placeholder="Block"><br><br>
+        <input type="number" id="capacity" placeholder="Capacity"><br><br>
+        <input type="text" id="roomType" placeholder="Room Type"><br><br>
+        <button onclick="addRoom()">Add Room</button>
+    </div>
+
+    <div class="card">
+        <h2>Rooms</h2>
+        <ul id="roomList"></ul>
+    </div>
+
+    <div class="card">
+        <h2>Allocate Room</h2>
+        <select id="studentSelect"></select><br><br>
+        <select id="roomSelect"></select><br><br>
+        <button onclick="allocateRoom()">Allocate</button>
+    </div>
+
+    <div class="card">
+        <h2>Allocations</h2>
+        <ul id="allocationList"></ul>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
